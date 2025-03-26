@@ -1,4 +1,5 @@
 /* ========== CSS Variables ========== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@500&display=swap');
 :root {
   /* Dark Mode (Deep Blue) */
   --dark-bg: #0a192f;
@@ -13,12 +14,19 @@
   --light-text: #2e2e2e;
   --light-accent: #20a4a8;
   --light-secondary: #3d5a80;
+
+  /* Fonts */
+  --font-primary: 'Inter', sans-serif;
+  --font-secondary: 'Space Grotesk', sans-serif;
+
 }
 
 /* ========== General Styles ========== */
 body {
   margin: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: var(--font-primary);
+  font-display: swap;
+  /* font-family: 'Arial', sans-serif */
   transition: background-color 0.3s, color 0.3s;
 }
 
@@ -140,4 +148,9 @@ h1 {
 p {
   font-size: 1.1rem;
   line-height: 1.6;
+}
+h1, h2, h3, h4 {
+  font-family: var(--font-secondary);
+  letter-spacing: -0.5px;
+  font-weight: 500;
 }

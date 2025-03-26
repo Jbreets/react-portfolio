@@ -1,0 +1,95 @@
+/* Home.css */
+.page-content {
+    max-width: 1200px;
+    margin: 10 auto;
+    padding: 2rem;
+  }
+  
+  .hero-section {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    /* background: linear-gradient(90deg, #3a7bd5, #00d2ff); */
+    -webkit-background-clip: text;
+    background-clip: text;
+    /* color: transparent; */
+    display: inline-block;
+  }
+  
+  .tagline {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+  }
+  
+  .intro {
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    line-height: 1.6;
+  }
+  
+  .skills-cloud-section {
+    margin-top: 4rem;
+    text-align: center;
+  }
+  
+  .skills-cloud-section h2 {
+    margin-bottom: 2rem;
+  }
+  
+  .skills-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  
+  .skill-tag {
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: default;
+    transition: all 0.3s ease;
+    position: relative;
+    font-size: var(--size);
+    opacity: var(--opacity);
+    background: hsla(var(--hue), 80%, 60%, 0.1);
+    color: hsl(var(--hue), 80%, 50%);
+    border: 1px solid hsl(var(--hue), 80%, 70%);
+  }
+  
+  .skill-tag.hovered {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    background: hsla(var(--hue), 80%, 60%, 0.2);
+    z-index: 10;
+  }
+  
+  .skill-level {
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.8rem;
+    background: var(--bg-secondary);
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    white-space: nowrap;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Dark mode support */
+  .dark-mode .skill-tag {
+    background: hsla(var(--hue), 80%, 60%, 0.15);
+    color: hsl(var(--hue), 80%, 65%);
+  }
+  
+  .dark-mode .skill-level {
+    background: var(--dark-nav);
+  }

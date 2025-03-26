@@ -97,6 +97,13 @@
     background: rgba(30, 30, 30, 0.8);
   }
   
+  .dark-mode .contact-info i {
+    color: #64ffda;
+  }
+  .dark-mode .contact-info h2 {
+    color: #64ffda;
+  }
+
   .dark-mode .contact-info a:hover {
     color: #20a4a8;
   }

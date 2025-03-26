@@ -16,7 +16,7 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // Simulate form submission (replace with FormSubmit or your backend)
+    
     console.log('Form submitted:', formData);
     setIsSubmitted(true);
     setFormData({ name: '', email: '', message: '' });
