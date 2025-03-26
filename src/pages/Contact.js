@@ -33,22 +33,22 @@ const Contact = () => {
           <h2>Contact Information</h2>
           <p>
             <i className="fas fa-envelope"></i> Email: 
-            <a href="mailto:example@email.com">example@email.com</a>
+            <a href="mailto:example@email.com">jackbreeton@gmail.com</a>
           </p>
           <p>
             <i className="fas fa-phone"></i> Phone: 
-            <a href="tel:+1234567890">+1 (234) 567-890</a>
+            <a href="tel:+1234567890">+447971857493</a>
           </p>
           <p>
             <i className="fab fa-linkedin"></i> LinkedIn: 
-            <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
-              linkedin.com/in/yourprofile
+            <a href="https://www.linkedin.com/in/jack-breeton-6540511b0/" target="_blank" rel="noopener noreferrer">
+              linkedin.com/in/jack-breeton
             </a>
           </p>
           <p>
             <i className="fab fa-github"></i> GitHub: 
-            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
-              github.com/yourusername
+            <a href="https://github.com/Jbreets/" target="_blank" rel="noopener noreferrer">
+            github.com/jackbreeton
             </a>
           </p>
         </div>

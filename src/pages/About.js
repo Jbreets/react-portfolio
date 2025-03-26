@@ -1,5 +1,6 @@
 import React from 'react';
-import './About.css'; // We'll create this file next
+import ResumeDownload from '../components/ResumeDownload';
+import './About.css';
 
 const About = () => {
   return (
@@ -20,6 +21,9 @@ const About = () => {
             In a professional context, I am a passionate developer with a focus on creating
             user-friendly and efficient applications. I enjoy solving complex problems and
             continuously learning new technologies to improve my skills.
+          </p>
+          <p>
+          <ResumeDownload/>
           </p>
         </div>
         <div className="about-image fade-in">

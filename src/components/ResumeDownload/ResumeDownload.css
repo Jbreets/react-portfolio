@@ -1,0 +1,92 @@
+/* Resume Download Card */
+.resume-download-card {
+    background: var(--bg-secondary);
+    border-radius: 12px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 600px;
+    margin: 40px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid var(--accent-primary);
+  }
+  
+  .resume-download-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .resume-text h3 {
+    margin: 0 0 8px 0;
+    color: var(--accent-primary);
+  }
+  
+  .resume-text p {
+    margin: 0;
+    color: var(--text-primary);
+    opacity: 0.9;
+  }
+  
+  /* Download Button */
+  .download-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    background: var(--accent-primary);
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .download-button:hover {
+    background: var(--accent-hover);
+    transform: translateX(4px);
+  }
+  
+  .icon-download {
+    font-size: 1.2rem;
+    transition: transform 0.3s;
+  }
+  
+  .icon-arrow {
+    font-size: 1rem;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all 0.3s;
+  }
+  
+  .download-button:hover .icon-download {
+    transform: translateY(3px);
+  }
+  
+  .download-button:hover .icon-arrow {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  /* Dark Mode Support */
+  .dark-mode .resume-download-card {
+    background: var(--dark-nav);
+    border-color: var(--dark-accent);
+  }
+  
+  .dark-mode .download-button {
+    background: var(--dark-accent);
+    color: var(--dark-bg);
+  }
+  
+  /* Mobile Responsive */
+  @media (max-width: 768px) {
+    .resume-download-card {
+      flex-direction: column;
+      text-align: center;
+      gap: 20px;
+    }
+  }
