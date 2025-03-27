@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import './Projects.css';
 
+import ultraGamesScoreboard from '../components/images/ultra-games-scoreboard.png';
+import kitTracker from '../components/images/kit-tracker.png';
+import pdfGen from '../components/images/pdf-gen.png';
+
 
 const projectsData = [
   {
@@ -9,7 +13,7 @@ const projectsData = [
     description: "A full-stack web app to keep and display scores for the ultra games events",
     tags: ["PHP", "MYSQL", "Javascript", "CSS"],
     // add image for Ultra games scoreboard
-    image: "https://via.placeholder.com/400x250?text=E-Commerce+App",
+    image: (ultraGamesScoreboard),
     githubLink: "https://github.com/Jbreets/ultra-games-scoreboard",
     liveDemo: "https://scores.theultragames.com/"
   },
@@ -27,7 +31,7 @@ const projectsData = [
     title: "Kit Tracker",
     description: "CRUD application for managing keeping track of kit for Ultra events.",
     tags: ["JavaScript", "PHP", "MYSQL"],
-    image: "https://via.placeholder.com/400x250?text=Task+Manager",
+    image: (kitTracker),
     githubLink: "https://github.com/Jbreets/kit-tracker",
     liveDemo: "https://ultradev.co.uk/sites/kit-tracker/"
   },
@@ -36,7 +40,7 @@ const projectsData = [
     title: "Flask Functions",
     description: "A home for small in house functions used at Ultra events. (in progress)",
     tags: ["Python", "Flask"],
-    image: "https://via.placeholder.com/400x250?text=Task+Manager",
+    image: (pdfGen),
     githubLink: "https://github.com/Jbreets/csv-to-pdf",
     liveDemo: "https://pdf.ultradev.co.uk/"
   }
