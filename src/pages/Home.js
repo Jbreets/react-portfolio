@@ -23,9 +23,9 @@ const Home = () => {
     { name: 'HTML5', level: 90 },
     { name: 'CSS/Sass', level: 85 },
     { name: 'PHP', level: 75 },
-    { name: 'JavaScript', level: 55 },
-    { name: 'Python', level: 65 },
-    { name: 'SQL', level: 55 },
+    { name: 'JavaScript', level: 65 },
+    { name: 'Python', level: 75 },
+    { name: 'SQL', level: 65 },
     { name: 'Git', level: 60 }
   ];
 
@@ -37,7 +37,7 @@ const Home = () => {
       <div className="hero-section">
         <h1>Hi, I'm Jack Breeton</h1>
         <p className="tagline">
-          Frontend Developer | UI Enthusiast | Problem Solver
+          Full stack web Developer | Problem Solver
         </p>
         <p className="intro">
           I build responsive, accessible web applications with modern technologies.
