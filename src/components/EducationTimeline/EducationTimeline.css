@@ -1,0 +1,70 @@
+.modern-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .timeline-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    background: var(--bg-secondary);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  }
+  
+  .timeline-data {
+    border-right: 2px dashed var(--accent-primary);
+    padding-right: 1.5rem;
+  }
+  
+  .timeline-description {
+    padding: 0.5rem;
+  }
+  
+  .timeline-arrow {
+    text-align: center;
+    margin: 0.5rem 0;
+    opacity: 0.7;
+  }
+  
+  .timeline-arrow svg {
+    animation: bounce 2s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(5px); }
+  }
+  
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .skills-list span {
+    background: rgba(100, 200, 255, 0.1);
+    padding: 0.3rem 0.8rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .timeline-item {
+      grid-template-columns: 1fr;
+    }
+    
+    .timeline-data {
+      border-right: none;
+      border-bottom: 2px dashed var(--accent-primary);
+      padding-right: 0;
+      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
