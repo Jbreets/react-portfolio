@@ -94,7 +94,7 @@
   
   /* Dark Mode Support */
   .dark-mode .contact-info {
-    background: rgba(30, 30, 30, 0.8);
+    background: #3d5a80;
   }
   
   .dark-mode .contact-info i {

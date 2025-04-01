@@ -51,6 +51,12 @@ const Contact = () => {
             github.com/jackbreeton
             </a>
           </p>
+          <p>
+            <i className="fab fa-instagram"></i> Instagram: 
+            <a href="https://instagram.com/jack_breeton/" target="_blank" rel="noopener noreferrer">
+             instagram.com/jack_breeton/
+            </a>
+          </p>
         </div>
 
         {/* Contact Form */}
