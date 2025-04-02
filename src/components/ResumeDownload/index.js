@@ -1,9 +1,10 @@
 import React from 'react';
 import { FaFileDownload, FaArrowRight } from 'react-icons/fa';
+import CV from '../files/cv-Jack-Breeton.docx';
 import './ResumeDownload.css';
 
 const ResumeDownload = () => {
-  const resumeFile = '/documents/your-resume.pdf';
+  const resumeFile = CV
   
   return (
     <div className="resume-download-card">
@@ -13,9 +14,9 @@ const ResumeDownload = () => {
       </div>
       <a 
         href={resumeFile} 
-        download="YourName-Resume.pdf"
+        download="cv-Jack-Breeton.docx"
         className="download-button"
-        aria-label="Download resume PDF"
+        aria-label="Download resume docx"
       >
         <span>Download Resume</span>
         <FaFileDownload className="icon-download" />
