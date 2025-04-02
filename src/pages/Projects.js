@@ -17,15 +17,15 @@ const projectsData = [
     githubLink: "https://github.com/Jbreets/ultra-games-scoreboard",
     liveDemo: "https://scores.theultragames.com/"
   },
-  {
-    id: 2,
-    title: "Funky Bingo",
-    description: "Website used for the Funky Bingo brand to advertise and sell tickets. (currently down :( )",
-    tags: ["Wordpress", "PHP", "CSS"],
-    image: "https://via.placeholder.com/400x250?text=Weather+Dashboard",
-    githubLink: "https://github.com/Jbreets/funky-bingo",
-    liveDemo: "#blank"
-  },
+  // {
+    // id: 2,
+    // title: "Funky Bingo",
+    // description: "Website used for the Funky Bingo brand to advertise and sell tickets. (currently down :( )",
+    // tags: ["Wordpress", "PHP", "CSS"],
+    // image: "https://via.placeholder.com/400x250?text=Weather+Dashboard",
+    // githubLink: "https://github.com/Jbreets/funky-bingo",
+    // liveDemo: "#blank"
+  // },
   {
     id: 3,
     title: "Kit Tracker",
