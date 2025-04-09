@@ -35,8 +35,8 @@ const EducationTimeline = () => {
     },
     {
       id: 4,
-      year: "2016 - 2018",
-      institution: "High School",
+      year: "2013 - 2018",
+      institution: "Secondary School",
       degree: "2 A's in English and Maths and 6 B's achieved in all other Grades",
       description: "Focus on Mathematics and Physics",
       icon: "📚",

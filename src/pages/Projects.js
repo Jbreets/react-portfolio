@@ -4,6 +4,8 @@ import './Projects.css';
 import ultraGamesScoreboard from '../components/images/ultra-games-scoreboard.png';
 import kitTracker from '../components/images/kit-tracker.png';
 import pdfGen from '../components/images/pdf-gen.png';
+import qr from '../components/images/qr.png';
+import totals from '../components/images/totals.png';
 
 
 const projectsData = [
@@ -43,6 +45,24 @@ const projectsData = [
     image: (pdfGen),
     githubLink: "https://github.com/Jbreets/csv-to-pdf",
     liveDemo: "https://pdf.ultradev.co.uk/"
+  },
+  {
+    id: 5,
+    title: "QR code",
+    description: "Small single function web app used to generate posters with custom QR codes",
+    tags: ["PHP"],
+    image: (qr),
+    githubLink: "https://github.com/Jbreets/qr-code",
+    liveDemo: "https://ultradev.co.uk/sites/qr-code/"
+  },
+  {
+    id: 6,
+    title: "Charity Total Display",
+    description: "Single page web app used to display current amount raised for Ultra events",
+    tags: ["PHP", "Javascript", "API"],
+    image: (totals),
+    githubLink: "https://github.com/Jbreets/overall-board",
+    liveDemo: "https://ultradev.co.uk/sites/overall-board/"
   }
   
 ];
