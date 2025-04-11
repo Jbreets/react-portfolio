@@ -1,5 +1,6 @@
 import React from 'react';
 import ResumeDownload from '../components/ResumeDownload';
+import AboutMe from '../components/images/about-me.jpeg'
 import './About.css';
 
 const About = () => {
@@ -21,7 +22,7 @@ const About = () => {
         </div>
         <div className="about-image fade-in">
           <img
-            src="https://via.placeholder.com/400" // Replace with your image URL
+            src={AboutMe} // Replace with your image URL
             alt="About Me"
           />
         </div>
