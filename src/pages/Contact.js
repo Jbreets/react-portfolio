@@ -33,28 +33,25 @@ const Contact = () => {
           <h2>Contact Information</h2>
           <p>
             <i className="fas fa-envelope"></i> Email: 
-            <a href="mailto:example@email.com">jackbreeton@gmail.com</a>
+            <a href="mailto:example@email.com"> jackbreeton@gmail.com</a>
           </p>
           <p>
             <i className="fas fa-phone"></i> Phone: 
-            <a href="tel:+1234567890">+447971857493</a>
+            <a href="tel:+1234567890"> +447971857493</a>
           </p>
           <p>
             <i className="fab fa-linkedin"></i> LinkedIn: 
-            <a href="https://www.linkedin.com/in/jack-breeton-6540511b0/" target="_blank" rel="noopener noreferrer">
-              linkedin.com/in/jack-breeton
+            <a href="https://www.linkedin.com/in/jack-breeton-6540511b0/" target="_blank" rel="noopener noreferrer"> linkedin.com/in/jack-breeton
             </a>
           </p>
           <p>
             <i className="fab fa-github"></i> GitHub: 
-            <a href="https://github.com/Jbreets/" target="_blank" rel="noopener noreferrer">
-            github.com/jackbreeton
+            <a href="https://github.com/Jbreets/" target="_blank" rel="noopener noreferrer"> github.com/jackbreeton
             </a>
           </p>
           <p>
             <i className="fab fa-instagram"></i> Instagram: 
-            <a href="https://instagram.com/jack_breeton/" target="_blank" rel="noopener noreferrer">
-             instagram.com/jack_breeton/
+            <a href="https://instagram.com/jack_breeton/" target="_blank" rel="noopener noreferrer"> instagram.com/jack_breeton/
             </a>
           </p>
         </div>

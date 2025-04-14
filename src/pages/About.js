@@ -10,7 +10,7 @@ const About = () => {
       <div className="about-container">
         <div className="about-text fade-in">
           <p>
-          Hi, I’m Jack Breeton, a determined and reliable junior web developer with a strong foundation in full-stack development. I’m passionate about building intuitive applications, solving complex problems, and continuously expanding my skill set.
+          Hi, I’m Jack Breeton, a determined and reliable Junior Web Developer with a strong foundation in full-stack development. I’m passionate about building intuitive applications, solving complex problems, and continuously expanding my skill set.
           </p>
           <p>
           Outside of development, I enjoy hitting the gym, travelling with friends, hiking, and discovering great food spots. These activities fuel my creativity and problem-solving mindset, helping me bring fresh perspectives into my work.

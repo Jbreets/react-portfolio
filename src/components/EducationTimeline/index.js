@@ -8,7 +8,7 @@ const EducationTimeline = () => {
       year: "2021 - 2022",
       institution: "EMA Training",
       degree: "BCS Level 3 Certificate in Programming",
-      description: "The software dev apprenticeship I took up working under Ultra Events",
+      description: "The software developer apprenticeship I undertook for/with Ultra Events",
       icon: "🎓",
       skills: ["Problem Solving", "Data structures and algorithms"],
       logo: ""
@@ -28,7 +28,7 @@ const EducationTimeline = () => {
       year: "2018 - 2020",
       institution: "Nottingham college",
       degree: "Level 3 Television and Film",
-      description: "Completed before pivoting to a more technical field, but aided in ability to use new software and aplly a creatinve approach",
+      description: "Completed before pivoting to a more technical field, but aided in ability to use new software and aplly a creative approach",
       icon: "📷",
       skills: ["Creativity", "Independance"],
       logo: ""

@@ -26,10 +26,10 @@ const Home = () => {
       <div className="hero-section">
         <h1>Hi, I'm Jack Breeton</h1>
         <p className="tagline">
-          Full stack web Developer | Problem Solver
+        Full Stack Web Developer | Problem Solver
         </p>
         <p className="intro">
-          Welcome to my personal website where I display my person, relative achievements and skils I have learnt throughout the years.
+          Welcome to my personal website where I display my achievements and skils I have learnt throughout the years.
         </p>
       </div>
 
