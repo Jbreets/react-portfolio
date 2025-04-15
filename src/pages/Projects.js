@@ -12,9 +12,8 @@ const projectsData = [
   {
     id: 1,
     title: "Ultra Games scoreboard",
-    description: "A full-stack web app to keep and display scores for the ultra games events",
-    tags: ["PHP", "MYSQL", "Javascript", "CSS"],
-    // add image for Ultra games scoreboard
+    description: "A full-stack web application showcased at Ultra Games events, providing participants and attendees with real-time updates on how their supported teams (and others) are performing.",
+    tags: ["HTML", "CSS", "PHP", "MYSQL", "Javascript"],
     image: (ultraGamesScoreboard),
     githubLink: "https://github.com/Jbreets/ultra-games-scoreboard",
     liveDemo: "https://scores.theultragames.com/"
@@ -31,8 +30,9 @@ const projectsData = [
   {
     id: 3,
     title: "Kit Tracker",
-    description: "CRUD application for managing keeping track of kit for Ultra events.",
-    tags: ["JavaScript", "PHP", "MYSQL"],
+    // description: "CRUD application for managing keeping track of kit for Ultra events.",
+    description: "A CRUD web application used by general and cleaning staff at Ultra events to accurately track returned and missing kit across different event seasons.",
+    tags: ["HTML", "Bootstrap", "JavaScript", "PHP", "MYSQL"],
     image: (kitTracker),
     githubLink: "https://github.com/Jbreets/kit-tracker",
     liveDemo: "https://ultradev.co.uk/sites/kit-tracker/"
@@ -40,17 +40,17 @@ const projectsData = [
   {
     id: 4,
     title: "Flask Functions",
-    description: "A home for small in house functions used at Ultra events. (in progress)",
-    tags: ["Python", "Flask"],
+    description: "An in-progress Flask application with multiple modules designed to streamline and automate routine tasks for staff at Ultra events.",
+    tags: ["Python", "Flask", "HTML"],
     image: (pdfGen),
     githubLink: "https://github.com/Jbreets/csv-to-pdf",
     liveDemo: "https://pdf.ultradev.co.uk/"
   },
   {
     id: 5,
-    title: "QR code",
-    description: "Small single function web app used to generate posters with custom QR codes",
-    tags: ["PHP"],
+    title: "QR code generator",
+    description: "A single-page web app that generates custom posters for UWCB, UMMA, UCOMEDY, and UADVENTURES participants, helping them share their fundraising pages with automatically generated graphics.",
+    tags: ["PHP", "Javascript", "HTML", "Bootstrap"],
     image: (qr),
     githubLink: "https://github.com/Jbreets/qr-code",
     liveDemo: "https://ultradev.co.uk/sites/qr-code/"
@@ -58,8 +58,8 @@ const projectsData = [
   {
     id: 6,
     title: "Charity Total Display",
-    description: "Single page web app used to display current amount raised for Ultra events",
-    tags: ["PHP", "Javascript", "API"],
+    description: "A single-page web application built with PHP and JavaScript that integrates live data from the company CRM and charity APIs. It’s currently used in-office to track fundraising progress and boost team morale.",
+    tags: ["PHP", "Javascript", "API", "HTML"],
     image: (totals),
     githubLink: "https://github.com/Jbreets/overall-board",
     liveDemo: "https://ultradev.co.uk/sites/overall-board/"
@@ -71,7 +71,7 @@ const Projects = () => {
   const [activeFilter, setActiveFilter] = useState("All");
   const [selectedProject, setSelectedProject] = useState(null);
 
-  const filters = ["All", "JavaScript", "MYSQL", "PHP", "Wordpress", "Python", "Flask"];
+  const filters = ["All", "HTML", "CSS", "Bootstrap", "JavaScript", "MYSQL", "PHP", "Wordpress", "Python", "Flask"];
 
   const filteredProjects = activeFilter === "All" 
     ? projectsData 
