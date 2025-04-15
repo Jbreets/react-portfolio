@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaFileDownload, FaArrowRight } from 'react-icons/fa';
-import CV from '../files/cv-Jack-Breeton.docx';
+import CV from '../files/CV - Jack Breeton.docx';
 import './ResumeDownload.css';
 
 const ResumeDownload = () => {
