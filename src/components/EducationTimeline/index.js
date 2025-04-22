@@ -28,7 +28,7 @@ const EducationTimeline = () => {
       year: "2018 - 2020",
       institution: "Nottingham college",
       degree: "Level 3 Television and Film",
-      description: "Completed before pivoting to a more technical field, but aided in ability to use new software and aplly a creative approach",
+      description: "Completed before pivoting to a more technical field, but aided in ability to use new software and apply a creative approach",
       icon: "📷",
       skills: ["Creativity", "Independance"],
       logo: ""
@@ -38,7 +38,7 @@ const EducationTimeline = () => {
       year: "2013 - 2018",
       institution: "Secondary School",
       degree: "2 A's in English and Maths and 6 B's achieved in all other Grades",
-      description: "Focus on Mathematics and Physics",
+      description: "Achieved A grades in both English and Mathematics",
       icon: "📚",
       skills: ["Maths", "English", "IT"],
       logo: ""
