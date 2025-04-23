@@ -53,7 +53,7 @@ const projectsData = [
     tags: ["PHP", "Javascript", "HTML", "Bootstrap"],
     image: (qr),
     githubLink: "https://github.com/Jbreets/qr-code",
-    liveDemo: "https://ultradev.co.uk/sites/qr-code/"
+    liveDemo: "https://poster.ultraevents.co/"
   },
   {
     id: 6,
