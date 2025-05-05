@@ -1,70 +1,103 @@
 import React, { useState } from 'react';
 import './Projects.css';
 
+
+import ultraTickets from '../components/images/ultra-tickets.png';
+import ultraSites from '../components/images/ultra-sites.png';
 import ultraGamesScoreboard from '../components/images/ultra-games-scoreboard.png';
 import kitTracker from '../components/images/kit-tracker.png';
 import pdfGen from '../components/images/pdf-gen.png';
 import qr from '../components/images/qr.png';
 import totals from '../components/images/totals.png';
 
-
 const projectsData = [
   {
     id: 1,
-    title: "Ultra Games scoreboard",
+    title: "Ultra Tickets Websites",
+    description: `
+      Contributed to the development and maintenance of multiple ticketing platforms used by Ultra Events brands. 
+      Work included front-end implementation, backend development in PHP, database handling, and integration with event tools.
+
+      Sites worked on:
+      - Ultra tickets.co.uk
+      - Ultra Tickets.co (UK, USA, CA, AU)
+    `,
+    tags: ["HTML", "CSS", "PHP", "MYSQL", "Javascript", "Wordpress", "Eccomerce"],
+    image: ultraTickets,
+    githubLink: "",
+    extraLinks: [
+      { label: "Ultra tickets.co.uk", url: "https://www.ultratickets.co.uk/uwcb" },
+      { label: "Ultra tickets.co", url: "https://www.ultratickets.co.uk/umma" }
+    ]
+  },
+  {
+    id: 2,
+    title: "Ultra Events Brand Websites",
+    description: `
+      Worked on the core brand sites for Ultra Events, focusing on usability improvements, content addition and debugging.
+
+      Sites involved:
+      - Ultra White Collar Boxing (UWCB)
+      - Ultra MMA (UMMA)
+      - Ultra Comedy (UComedy)
+      - Ultra Adventures (UAdventures)
+    `,
+    tags: ["HTML", "CSS", "PHP", "MYSQL", "Javascript", "Wordpress"],
+    image: ultraSites,
+    githubLink: "",
+    extraLinks: [
+      { label: "Ultra Events", url: "https://ultraevents.co/" },
+      { label: "UWCB", url: "https://www.uwcb.co.uk" },
+      { label: "UMMA", url: "https://www.ultramma.co.uk" },
+      { label: "UComedy", url: "https://www.ultracomedy.co.uk" },
+      { label: "UAdventures", url: "https://www.ultraadventures.co.uk" }
+    ]
+  },
+  {
+    id: 3,
+    title: "Ultra Games Scoreboard",
     description: "A full-stack web application showcased at Ultra Games events, providing participants and attendees with real-time updates on how their supported teams (and others) are performing.",
     tags: ["HTML", "CSS", "PHP", "MYSQL", "Javascript"],
-    image: (ultraGamesScoreboard),
+    image: ultraGamesScoreboard,
     githubLink: "https://github.com/Jbreets/ultra-games-scoreboard",
     liveDemo: "https://scores.theultragames.com/"
   },
-  // {
-    // id: 2,
-    // title: "Funky Bingo",
-    // description: "Website used for the Funky Bingo brand to advertise and sell tickets. (currently down :( )",
-    // tags: ["Wordpress", "PHP", "CSS"],
-    // image: "https://via.placeholder.com/400x250?text=Weather+Dashboard",
-    // githubLink: "https://github.com/Jbreets/funky-bingo",
-    // liveDemo: "#blank"
-  // },
   {
-    id: 3,
+    id: 4,
     title: "Kit Tracker",
-    // description: "CRUD application for managing keeping track of kit for Ultra events.",
     description: "A CRUD web application used by general and cleaning staff at Ultra events to accurately track returned and missing kit across different event seasons.",
     tags: ["HTML", "Bootstrap", "JavaScript", "PHP", "MYSQL"],
-    image: (kitTracker),
+    image: kitTracker,
     githubLink: "https://github.com/Jbreets/kit-tracker",
     liveDemo: "https://ultradev.co.uk/sites/kit-tracker/"
   },
   {
-    id: 4,
+    id: 5,
     title: "Flask Functions",
     description: "An in-progress Flask application with multiple modules designed to streamline and automate routine tasks for staff at Ultra events.",
     tags: ["Python", "Flask", "HTML"],
-    image: (pdfGen),
+    image: pdfGen,
     githubLink: "https://github.com/Jbreets/csv-to-pdf",
     liveDemo: "https://pdf.ultradev.co.uk/"
   },
   {
-    id: 5,
-    title: "QR code generator",
+    id: 6,
+    title: "QR Code Generator",
     description: "A single-page web app that generates custom posters for UWCB, UMMA, UCOMEDY, and UADVENTURES participants, helping them share their fundraising pages with automatically generated graphics.",
     tags: ["PHP", "Javascript", "HTML", "Bootstrap"],
-    image: (qr),
+    image: qr,
     githubLink: "https://github.com/Jbreets/qr-code",
     liveDemo: "https://poster.ultraevents.co/"
   },
   {
-    id: 6,
+    id: 7,
     title: "Charity Total Display",
     description: "A single-page web application built with PHP and JavaScript that integrates live data from the company CRM and charity APIs. It’s currently used in-office to track fundraising progress and boost team morale.",
     tags: ["PHP", "Javascript", "API", "HTML"],
-    image: (totals),
+    image: totals,
     githubLink: "https://github.com/Jbreets/overall-board",
     liveDemo: "https://ultradev.co.uk/sites/overall-board/"
   }
-  
 ];
 
 const Projects = () => {
@@ -80,8 +113,7 @@ const Projects = () => {
   return (
     <div className="page-content fade-in">
       <h1>My Projects</h1>
-      
-      {/* Filter Buttons */}
+
       <div className="filter-buttons">
         {filters.map(filter => (
           <button
@@ -94,7 +126,6 @@ const Projects = () => {
         ))}
       </div>
 
-      {/* Projects Grid */}
       <div className="projects-grid">
         {filteredProjects.map(project => (
           <div 
@@ -113,7 +144,6 @@ const Projects = () => {
         ))}
       </div>
 
-      {/* Project Modal */}
       {selectedProject && (
         <div className="project-modal">
           <div className="modal-content">
@@ -125,15 +155,17 @@ const Projects = () => {
             </button>
             <img src={selectedProject.image} alt={selectedProject.title} />
             <h2>{selectedProject.title}</h2>
-            <p>{selectedProject.description}</p>
+            <pre className="description">{selectedProject.description}</pre>
             <div className="modal-links">
-              <a 
-                href={selectedProject.githubLink} 
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                GitHub
-              </a>
+              {selectedProject.githubLink && (
+                <a 
+                  href={selectedProject.githubLink} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  GitHub
+                </a>
+              )}
               {selectedProject.liveDemo && (
                 <a 
                   href={selectedProject.liveDemo} 
@@ -143,6 +175,16 @@ const Projects = () => {
                   Live Demo
                 </a>
               )}
+              {selectedProject.extraLinks && selectedProject.extraLinks.map(link => (
+                <a 
+                  key={link.label}
+                  href={link.url}
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  {link.label}
+                </a>
+              ))}
             </div>
           </div>
         </div>
