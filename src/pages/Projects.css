@@ -89,6 +89,17 @@
     justify-content: center;
     z-index: 1000;
   }
+
+  .project-modal .description {
+    white-space: pre-wrap;       /* Wrap text */
+    word-wrap: break-word;       /* Break long words */
+    overflow-wrap: break-word;   /* Handle very long words */
+    max-width: 100%;             /* Prevent overflow */
+    font-family: inherit;        /* Optional: Use body font instead of monospace */
+    line-height: 1.5;
+    font-size: 1rem;
+  }
+  
   
   .modal-content {
     background: white;
