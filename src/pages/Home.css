@@ -93,3 +93,39 @@
   .dark-mode .skill-level {
     background: var(--dark-nav);
   }
+  .personal-skills-section {
+    margin-top: 3rem;
+    text-align: center;
+  }
+  
+  .personal-skills-section h2 {
+    color: #3a86ff;
+    margin-bottom: 1.5rem;
+  }
+  
+  .personal-skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    font-weight: bold;
+  }
+  
+  .personal-skill-badge {
+    background-color: #3a86ff;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: transform 0.2s ease;
+  }
+  
+  .personal-skill-badge:hover {
+    transform: scale(1.05);
+    background-color: #265df2;
+  }
+  .personal-skill-badge svg {
+    vertical-align: middle;
+    margin-bottom: 2px;
+  }
