@@ -8,13 +8,13 @@ import { FaComments, FaUsers, FaLightbulb, FaClock, FaCogs, FaUserFriends, FaTas
 
 const Home = () => {
   const skills = [
-    { name: 'HTML5', level: 90 },
-    { name: 'CSS/Sass', level: 85 },
-    { name: 'PHP', level: 75 },
-    { name: 'JavaScript', level: 65 },
-    { name: 'Python', level: 75 },
-    { name: 'SQL', level: 65 },
-    { name: 'Git', level: 70 }
+    { name: 'HTML5', color: '#e34c26' },
+    { name: 'CSS/Sass', color: '#2965f1' },
+    { name: 'PHP', color: '#777BB3' },
+    { name: 'JavaScript', color: '#f0db4f' },
+    { name: 'Python', color: '#3776ab' },
+    { name: 'SQL', color: '#00618a' },
+    { name: 'Git', color: '#f34f29' }
   ];
 
   const personalSkills = [
@@ -57,6 +57,7 @@ const Home = () => {
         animate={true}
       />
 
+      {/* remove skill level and instead Have color based on the item it is e.g html / css Blue */}
       <div className="skills-cloud-section">
         <h2>My Tech Stack</h2>
         <div className="skills-cloud">
@@ -65,17 +66,13 @@ const Home = () => {
               key={skill.name}
               className={`skill-tag ${hoveredSkill === skill.name ? 'hovered' : ''}`}
               style={{
-                '--size': `${Math.max(14, skill.level * 0.3)}px`,
-                '--opacity': `${skill.level / 100}`,
-                '--hue': `${skill.level * 1.2}`
+                backgroundColor: skill.color,
+                color: '#fff'
               }}
               onMouseEnter={() => setHoveredSkill(skill.name)}
               onMouseLeave={() => setHoveredSkill(null)}
             >
               {skill.name}
-              {hoveredSkill === skill.name && (
-                <span className="skill-level">{skill.level}%</span>
-              )}
             </div>
           ))}
         </div>

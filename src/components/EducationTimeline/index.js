@@ -55,7 +55,7 @@ const EducationTimeline = () => {
             {index > 0 && (
               <div className="timeline-arrow" data-aos="fade-up">
                 <svg width="24" height="24" viewBox="0 0 24 24">
-                  <path d="M7 10l5 5 5-5z" fill="var(--accent-primary)" />
+                  <path d="M7 10l5 5 5-5z" />
                 </svg>
               </div>
             )}

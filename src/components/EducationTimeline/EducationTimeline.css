@@ -53,7 +53,12 @@
     border-radius: 50px;
     font-size: 0.8rem;
   }
-  
+  path {
+    fill: var(--accent-primary);
+  }
+  .dark-mode path {
+    fill: white;
+  }
   /* Responsive */
   @media (max-width: 768px) {
     .timeline-item {
