@@ -122,3 +122,9 @@
       flex-direction: column;
     }
   }
+  @media (max-width: 430px) {
+    .form-group input,
+    .form-group textarea {
+     width: 70%; 
+    }
+  }
