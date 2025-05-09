@@ -129,6 +129,12 @@
     vertical-align: middle;
     margin-bottom: 2px;
   }
+  .personal-skill-badge path {
+    fill: white;
+  }
+  .dark-mode .personal-skill-badge path {
+    fill: white;
+  }
   .skills-cloud {
     display: flex;
     flex-wrap: wrap;
