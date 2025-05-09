@@ -120,6 +120,7 @@
   }
   
   .close-btn {
+    color: black;
     position: absolute;
     top: 15px;
     right: 15px;
@@ -128,11 +129,17 @@
     border: none;
     cursor: pointer;
   }
+  .dark-mode .close-btn {
+    color: white;
+  }
   
   .modal-links {
     display: flex;
+    flex-direction: column;
     gap: 15px;
     margin-top: 20px;
+    margin: 0 auto;
+    width: 75%;
   }
   
   .modal-links a {
