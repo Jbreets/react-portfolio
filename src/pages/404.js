@@ -6,7 +6,7 @@ export default function NotFound() {
   return (
     <div className="notfound-wrapper">
       <div className="notfound-box">
-        <h1>404</h1>
+        <h1>404 :(</h1>
         <p>Oops! The page you're looking for doesn't exist.</p>
         <Link to="/" className="notfound-link">Go Back Home</Link>
       </div>

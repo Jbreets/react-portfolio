@@ -19,19 +19,21 @@
   }
   
   .notfound-box h1 {
+    color: var(--light-secondary);
     font-size: 6rem;
     margin: 0 0 20px;
   }
   
   .notfound-box p {
+    color: var(--light-secondary);
     font-size: 1.2rem;
     margin-bottom: 30px;
   }
   
   .notfound-link {
     display: inline-block;
-    background: #fff;
-    color: #2a5298;
+    background:#2a5298;
+    color: #fff;
     text-decoration: none;
     padding: 10px 24px;
     border-radius: 5px;
@@ -41,4 +43,15 @@
   
   .notfound-link:hover {
     background: #f0f0f0;
+  }
+
+  .dark-mode .notfound-box h1 {
+    color: white;
+  }
+  .dark-mode .notfound-box p {
+    color: white;
+  }
+  .dark-mode .notfound-link {
+    background: #fff;
+    color: #2a5298;
   }
