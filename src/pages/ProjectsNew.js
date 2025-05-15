@@ -20,7 +20,7 @@ const projectData = [
       image: ultraTickets,
       tech: ["HTML", "CSS", "PHP", "MySQL", "JavaScript", "WordPress"],
       github: "",
-      live: "https://www.ultratickets.co.uk/uwcb",
+      live: "",
       extraLinks: [
         { label: "Ultra tickets.co.uk", url: "https://www.ultratickets.co.uk/uwcb" },
         { label: "Ultra tickets.co", url: "https://ultratickets.co/umma" }
@@ -50,7 +50,7 @@ const projectData = [
       image: ultraSites,
       tech: ["HTML", "CSS", "PHP", "MySQL", "JavaScript", "WordPress"],
       github: "",
-      live: "https://ultraevents.co/",
+      live: "",
       extraLinks: [
           { label: "Ultra Events", url: "https://ultraevents.co/" },
           { label: "UWCB", url: "https://www.uwcb.co.uk" },
