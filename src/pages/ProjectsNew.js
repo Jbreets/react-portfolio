@@ -115,7 +115,7 @@ const projectData = [
   
     return (
       <div className="projects-wrapper">
-        <h1 className="projects-heading">Projects</h1>
+        <h1 className="projects-heading">My Projects</h1>
   
         <div className="filter-bar">
           {allTags.map(tag => (
