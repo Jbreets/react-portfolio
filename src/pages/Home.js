@@ -14,7 +14,11 @@ const Home = () => {
     { name: 'JavaScript', color: '#f0db4f' },
     { name: 'Python', color: '#3776ab' },
     { name: 'SQL', color: '#00618a' },
-    { name: 'Git', color: '#f34f29' }
+    { name: 'Git', color: '#f34f29' },
+    { name: 'Bootstrap', color: '#7952B3' },
+    { name: 'React', color: '#61dbfb' },
+    { name: 'flask', color: '#3776AB' }
+
   ];
 
   const personalSkills = [
