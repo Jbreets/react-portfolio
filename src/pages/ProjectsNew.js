@@ -4,6 +4,7 @@ import './ProjectsNew.css';
 import ultraTickets from '../components/images/ultra-tickets.png';
 import ultraSites from '../components/images/ultra-sites.png';
 import ultraGamesScoreboard from '../components/images/ultra-games-scoreboard.png';
+import scraper from '../components/images/scraper.png';
 import kitTracker from '../components/images/kit-tracker.png';
 import pdfGen from '../components/images/pdf-gen.png';
 import qr from '../components/images/qr.png';
@@ -112,6 +113,36 @@ const projectData = [
     },
     {
       id: 4,
+      title: "Tyre Scraper CLI Tool",
+      summary: "Command-line PHP tool for scraping tyre data from e-commerce websites.",
+      description: `A terminal-based web scraper designed to extract structured tyre information from justtyres.co.uk. The tool collects brand, size, pattern, and price data across multiple pages, filtering it based on specified tyre dimensions. It can output the results to both a CSV file and a MySQL database for further analysis or integration.
+    
+      Key Features:
+      - Command-line scraper built with PHP and DOM parsing
+      - Filters tyres by specified width, aspect ratio, and rim size
+      - Exports data to CSV and inserts into a relational database
+      - Lightweight and modular structure for easy expansion to other sites
+    
+      My Role:
+      I built this scraper from scratch as a technical coding test. I structured the code to handle DOM traversal, pagination, data filtering, and output logic. I also created a clean README, database schema, and GitHub-ready project for reuse or deployment.
+    
+      Challenges:
+      - Navigating inconsistent HTML structures while maintaining performance
+        ➤ Solved using XPath and defensive parsing with DOMDocument
+      - Building a flexible exporter that supports multiple output formats
+        ➤ Achieved with separate functions for CSV and database export
+    
+      Results:
+      - Scraper successfully extracts and stores tyre data in both flat file and DB formats
+      - Easily adaptable to other retailers with minimal code changes
+      - Ideal starting point for larger-scale web data ingestion or price monitoring tasks`,
+      image: scraper, // You can replace this with your actual image import
+      tech: ["PHP", "MySQL", "DOMDocument", "XPath", "CLI"],
+      github: "https://github.com/Jbreets/php-scraper"
+    },
+    
+    {
+      id: 5,
       title: "Kit Tracker",
       summary: "Tool for managing returned and missing event kit.",
       description: `A CRUD web application designed to help staff at Ultra Events track and manage physical kit (equipment) across events and seasons. It enables fast, accurate monitoring of kit that is returned, in use, or missing — helping reduce losses and improve logistics.
@@ -141,7 +172,7 @@ const projectData = [
       live: "https://ultradev.co.uk/sites/kit-tracker/"
     },
     {
-      id: 5,
+      id: 6,
       title: "Flask Functions",
       summary: "Automation tool built with Flask.",
       description: `A modular backend tool built in Flask for automating various staff tasks at Ultra Events. Designed to simplify internal processes like data formatting, bulk CSV operations, and PDF generation — all accessible through a lightweight web interface. 
@@ -168,7 +199,7 @@ const projectData = [
       live: "https://csv-to-pdf-8zt1.onrender.com/"
     },
     {
-      id: 6,
+      id: 7,
       title: "QR Code Poster Generator",
       summary: "Creates custom posters with QR codes for fundraising.",
       description: `A single-page application used to generate branded fundraising posters for participants of Ultra Events, including UWCB, UMMA, UCOMEDY, and UADVENTURES. The tool allows users to input their details and instantly generate a downloadable graphic with a unique QR code linking to their personal fundraising page. 
@@ -198,7 +229,7 @@ const projectData = [
       live: "https://poster.ultraevents.co/"
     },
     {
-      id: 7,
+      id: 8,
       title: "Charity Total Display",
       summary: "Live data dashboard for team fundraising morale.",
       description: `An internal dashboard used at Ultra HQ to display live fundraising totals across all brands and events. Pulls real-time data from internal CRMs and external charity APIs to provide accurate and motivational stats for staff. 
