@@ -9,6 +9,8 @@ import kitTracker from '../components/images/kit-tracker.png';
 import pdfGen from '../components/images/pdf-gen.png';
 import qr from '../components/images/qr.png';
 import totals from '../components/images/totals.png';
+import csharpCalculator from '../components/images/csharpCalculator.png';
+
 
 const projectData = [
     {
@@ -256,6 +258,35 @@ const projectData = [
       tech: ["PHP", "JavaScript", "API", "HTML"],
       github: "https://github.com/Jbreets/overall-board",
       live: "https://ultradev.co.uk/sites/overall-board/"
+    },
+    {
+      id: 9,
+      title: "C# simple Calculator",
+      summary: "A simple console calculator used as a tool to learn C#",
+      description: `A beginner-friendly console application built to perform basic arithmetic operations interactively. Designed as a learning project while studying C# and .NET fundamentals, the app prompts users for input and processes calculations based on selected operations.
+
+      Key Features:
+      - Command-line interface for user input and results
+      - Input validation using TryParse for error handling
+      - Support for +, -, *, / operations with clean method-based logic
+      - Looping structure for multiple consecutive calculations
+      - Separate method for FizzBuzz from 1 to 100
+
+      My Role: I built the entire application as a solo learning project to reinforce my understanding of C# syntax, control structures, method calls, and error handling patterns. I focused on writing clean, readable code with proper flow control and user feedback.
+
+      Challenges:
+      - Managing invalid user input without crashing  
+        ➤ Solved using TryParse and looped prompts for better resilience
+      - Structuring logic cleanly across files  
+        ➤ Separated arithmetic functions into a dedicated Calculator class for clarity
+
+      Results:
+      - Reinforced core concepts of C# such as static methods, loops, switch cases, and console interaction
+      - A working and reusable console utility that's easy to extend or modify
+      - Solid foundation for moving into object-oriented programming and .NET applications`,
+      image: csharpCalculator,
+      tech: ["C#", "Dotnet"],
+      github: "https://github.com/Jbreets/learning-csharp/tree/main/Project%201/ConsoleCalculator"
     }
   ];
 
