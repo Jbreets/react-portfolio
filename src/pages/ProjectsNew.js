@@ -10,6 +10,7 @@ import pdfGen from '../components/images/pdf-gen.png';
 import qr from '../components/images/qr.png';
 import totals from '../components/images/totals.png';
 import csharpCalculator from '../components/images/csharpCalculator.png';
+import employeeManagerApp from '../components/images/employee-management.png';
 
 
 const projectData = [
@@ -285,8 +286,37 @@ const projectData = [
       - A working and reusable console utility that's easy to extend or modify
       - Solid foundation for moving into object-oriented programming and .NET applications`,
       image: csharpCalculator,
-      tech: ["C#", "Dotnet"],
+      tech: ["C#", ".Net"],
       github: "https://github.com/Jbreets/learning-csharp/tree/main/Project%201/ConsoleCalculator"
+    },
+    {
+      id: 10,
+      title: "C# Employee Management System",
+      summary: "A basic console-based CRUD application to manage employee records.",
+      description: `A foundational C# console project designed to manage employee data in memory. Created as a follow-up to a simple calculator project, this app reinforces object-oriented principles and interaction-driven programming through a command-line interface.
+    
+      Key Features:
+      - In-memory employee management using List<Employee>
+      - Add, view, search, update, and delete employees by ID
+      - Interactive command-line menu and input prompts
+      - Basic validation using TryParse and switch-case logic
+      - Modular code with separation of concerns (Options class, Employee store)
+    
+      My Role: I designed and built the project from scratch to strengthen my grasp of object-oriented programming, method usage, data structures, and control flow in C#. The goal was to simulate a mini-CRUD system that mimics real-world data entry and manipulation.
+    
+      Challenges:
+      - Ensuring accurate user input and error handling  
+        ➤ Implemented TryParse and conditional checks to avoid runtime errors
+      - Designing clean and maintainable code structure  
+        ➤ Separated logic into multiple classes and methods for clarity and reuse
+    
+      Results:
+      - Demonstrated key programming patterns like encapsulation, input validation, and list management
+      - Improved confidence working with user-defined types and collections in C#
+      - Set the stage for moving toward persistent data storage (e.g., JSON or database) and GUI-based interfaces`,
+      image: employeeManagerApp,
+      tech: ["C#", ".NET"],
+      github: "https://github.com/Jbreets/learning-csharp/tree/main/Project%202/EmployeeManagement"
     }
   ];
 
