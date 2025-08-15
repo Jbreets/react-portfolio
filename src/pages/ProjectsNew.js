@@ -1,16 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import './ProjectsNew.css';
+// import projectData from './Projects';
 
-import ultraTickets from '../components/images/ultra-tickets.png';
-import ultraSites from '../components/images/ultra-sites.png';
-import ultraGamesScoreboard from '../components/images/ultra-games-scoreboard.png';
-import scraper from '../components/images/scraper.png';
-import kitTracker from '../components/images/kit-tracker.png';
-import pdfGen from '../components/images/pdf-gen.png';
-import qr from '../components/images/qr.png';
-import totals from '../components/images/totals.png';
-import csharpCalculator from '../components/images/csharpCalculator.png';
-import employeeManagerApp from '../components/images/employee-management.png';
+import {
+  ultraTickets,
+  ultraSites,
+  ultraGamesScoreboard,
+  scraper,
+  kitTracker,
+  pdfGen,
+  qr,
+  totals,
+  csharpCalculator,
+  employeeManagerApp,
+  ToDoApp,
+} from '../components/images';
 
 
 const projectData = [
@@ -317,6 +321,15 @@ const projectData = [
       image: employeeManagerApp,
       tech: ["C#", ".NET"],
       github: "https://github.com/Jbreets/learning-csharp/tree/main/Project%202/EmployeeManagement"
+    },
+    {
+      id: 11,
+      title: "C# To-do application",
+      summary: "🚧 CURRENTLY UNDERWAY - C# terminal to do list that covers advanced aspects and features of csharp",
+      description:`A C# To-do list application that supports all basic CRUD features along with taking advantage of more advanced csharp features such as LINQ and generics in order to aquire a greater understanding of the csharp fundamentals `,
+      image:ToDoApp,
+      tech: ["C#", ".NET", "LINQ"],
+      github: "https://github.com/Jbreets/learning-csharp/tree/main/Project%203/ToDoApp"
     }
   ];
 
@@ -406,4 +419,3 @@ const projectData = [
       </div>
     );
   }
-  
