@@ -9,6 +9,7 @@ import {
   scraper,
   kitTracker,
   pdfGen,
+  sponsorGen,
   qr,
   totals,
   csharpCalculator,
@@ -207,6 +208,38 @@ const projectData = [
     },
     {
       id: 7,
+      title: "Wordpress Sponsor Image Generator Plugin",
+      summary: "WordPress Plugin - Dynamic image generator for event sponsors with custom branding",
+      description: `A custom WordPress plugin that generates professional sponsor images by combining participant names with sponsor logos and branding. This tool was created to streamline the sponsorship recognition process for Ultra White Collar Boxing events
+      Key Features:
+      Dynamic image generation using PHP GD library
+      Customizable templates matching Ultra brand guidelines
+      Responsive design that works across various social media platforms
+
+      My Role:
+      I developed this plugin from concept to deployment, creating both the frontend form interface and backend image processing functionality. The solution involved creating custom admin pages, handling file uploads, implementing image manipulation techniques, and ensuring cross-browser compatibility.
+      Technical Implementation:
+      Created custom post types for sponsor management
+      Implemented AJAX form submission for smooth user experience
+      Developed image processing algorithms to properly size and position elements
+      Ensured security through input validation and nonce verification
+
+      Challenges:
+      Maintaining image quality across different sponsor logo formats
+      ➤ Solved by implementing automatic image resizing and format conversion
+
+      Results:
+      - Reduced sponsor image creation time from 10+ minutes to under 10 seconds
+      - Generated over 2,000 sponsor images for UWCB events
+      - Maintained consistent branding across all generated images
+      - Received positive feedback from marketing teams for ease of use`,
+      image: sponsorGen,
+      tech: ["PHP", "Javascript", "Wordpress Plugin Development", "AJAX"],
+      // github:
+      live: "http://localhost/ultrawhitecollarboxing_php_7_4/sponsor-generator-image/",
+    },
+    {
+      id: 8,
       title: "QR Code Poster Generator",
       summary: "Creates custom posters with QR codes for fundraising.",
       description: `A single-page application used to generate branded fundraising posters for participants of Ultra Events, including UWCB, UMMA, UCOMEDY, and UADVENTURES. The tool allows users to input their details and instantly generate a downloadable graphic with a unique QR code linking to their personal fundraising page. 
@@ -236,7 +269,7 @@ const projectData = [
       live: "https://poster.ultraevents.co/"
     },
     {
-      id: 8,
+      id: 9,
       title: "Charity Total Display",
       summary: "Live data dashboard for team fundraising morale.",
       description: `An internal dashboard used at Ultra HQ to display live fundraising totals across all brands and events. Pulls real-time data from internal CRMs and external charity APIs to provide accurate and motivational stats for staff. 
@@ -265,7 +298,7 @@ const projectData = [
       live: "https://ultradev.co.uk/sites/overall-board/"
     },
     {
-      id: 9,
+      id: 10,
       title: "C# simple Calculator",
       summary: "A simple console calculator used as a tool to learn C#",
       description: `A beginner-friendly console application built to perform basic arithmetic operations interactively. Designed as a learning project while studying C# and .NET fundamentals, the app prompts users for input and processes calculations based on selected operations.
@@ -294,7 +327,7 @@ const projectData = [
       github: "https://github.com/Jbreets/learning-csharp/tree/main/Project%201/ConsoleCalculator"
     },
     {
-      id: 10,
+      id: 11,
       title: "C# Employee Management System",
       summary: "A basic console-based CRUD application to manage employee records.",
       description: `A foundational C# console project designed to manage employee data in memory. Created as a follow-up to a simple calculator project, this app reinforces object-oriented principles and interaction-driven programming through a command-line interface.
@@ -323,7 +356,7 @@ const projectData = [
       github: "https://github.com/Jbreets/learning-csharp/tree/main/Project%202/EmployeeManagement"
     },
     {
-      id: 11,
+      id: 12,
       title: "C# To-do application",
       summary: "🚧 CURRENTLY UNDERWAY - C# terminal to do list that covers advanced aspects and features of csharp",
       description:`A C# To-do list application that supports all basic CRUD features along with taking advantage of more advanced csharp features such as LINQ and generics in order to aquire a greater understanding of the csharp fundamentals `,

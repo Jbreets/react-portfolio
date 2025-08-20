@@ -5,6 +5,7 @@ import ultraGamesScoreboard from './ultra-games-scoreboard.png';
 import scraper from './scraper.png';
 import kitTracker from './kit-tracker.png';
 import pdfGen from './pdf-gen.png';
+import sponsorGen from './sponsor-image-gen.png';
 import qr from './poster-gen.png';
 import totals from './totals.png';
 import csharpCalculator from './csharpCalculator.png';
@@ -18,6 +19,7 @@ export {
   scraper,
   kitTracker,
   pdfGen,
+  sponsorGen,
   qr,
   totals,
   csharpCalculator,

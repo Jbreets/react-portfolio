@@ -106,7 +106,8 @@ body.modal-open {
     width: 100%;
     height: auto;
     max-height: 300px;
-    object-fit: cover;
+    /* object-fit: cover; */
+    object-fit: contain;
     margin-bottom: 20px;
     border-radius: 6px;
   }
@@ -163,6 +164,10 @@ body.modal-open {
     background: #007bff;
     color: white;
   }
+  .bold {
+    font-weight: bold;
+  }
+
   /* Dark Mode */
   .dark-mode .project-tile{
     background:#2d2d2d;
