@@ -145,7 +145,7 @@ const projectData = [
       - Easily adaptable to other retailers with minimal code changes
       - Ideal starting point for larger-scale web data ingestion or price monitoring tasks`,
       image: scraper, // You can replace this with your actual image import
-      tech: ["PHP", "MySQL", "DOMDocument", "XPath", "CLI"],
+      tech: ["PHP", "MySQL", "CLI"],
       github: "https://github.com/Jbreets/php-scraper"
     },
     
@@ -234,7 +234,7 @@ const projectData = [
       - Maintained consistent branding across all generated images
       - Received positive feedback from marketing teams for ease of use`,
       image: sponsorGen,
-      tech: ["PHP", "Javascript", "Wordpress Plugin Development", "AJAX"],
+      tech: ["PHP", "Javascript", "WordPress"],
       // github:
       live: "http://localhost/ultrawhitecollarboxing_php_7_4/sponsor-generator-image/",
     },
@@ -361,7 +361,7 @@ const projectData = [
       summary: "🚧 CURRENTLY UNDERWAY - C# terminal to do list that covers advanced aspects and features of csharp",
       description:`A C# To-do list application that supports all basic CRUD features along with taking advantage of more advanced csharp features such as LINQ and generics in order to aquire a greater understanding of the csharp fundamentals `,
       image:ToDoApp,
-      tech: ["C#", ".NET", "LINQ"],
+      tech: ["C#", ".NET"],
       github: "https://github.com/Jbreets/learning-csharp/tree/main/Project%203/ToDoApp"
     }
   ];
