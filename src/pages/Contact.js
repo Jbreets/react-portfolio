@@ -14,15 +14,6 @@ const Contact = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    
-    window.location.href = `mailto:jackbreeton@gmail.com?subject=${encodeURIComponent('Portfolio enquiry from ' + formData.name)}&body=${encodeURIComponent(formData.message + '\n\n' + formData.name + ' (' + formData.email + ')')}`;
-    setIsSubmitted(true);
-    setFormData({ name: '', email: '', message: '' });
-    setTimeout(() => setIsSubmitted(false), 3000);
-  };
-
   return (
     <div className="page-content fade-in">
       <h1>Get In Touch</h1>
@@ -65,7 +56,7 @@ const Contact = () => {
         >
           {/* FormSubmit Config (Hidden Fields) */}
           <input type="hidden" name="_captcha" value="false" />
-          <input type="hidden" name="_next" value="http://yourportfolio.com/thank-you" />
+          <input type="hidden" name="_next" value="https://jackbreeton.dev/contact" />
           <div className="form-group">
             <label htmlFor="name">Name</label>
             <input

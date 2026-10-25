@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
-import Projects from './pages/Projects';
 import ProjectsNew from './pages/ProjectsNew';
 import Contact from './pages/Contact';
 import NotFound from './pages/404';
