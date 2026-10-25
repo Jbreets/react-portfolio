@@ -1,6 +1,6 @@
 import React from 'react';
 import ResumeDownload from '../components/ResumeDownload';
-import AboutMe from '../components/images/about-me.jpeg'
+import AboutMe from '../components/images/profile.jpg'
 import './About.css';
 
 const About = () => {
@@ -10,18 +10,17 @@ const About = () => {
       <div className="about-container">
         <div className="about-text fade-in">
         <p>
-          Hi, I’m Jack Breeton — a reliable and driven Junior Web Developer with a solid foundation in full-stack development. I’m passionate about building intuitive applications, solving real-world problems, and continuously growing my skill set.
+          Hi, I’m Jack Breeton, a Software and Web Developer based in Nottingham with over five years of experience building and improving e-commerce platforms. I enjoy turning ideas into practical, reliable features and seeing them used by real customers.
         </p>
         <p>
-          My journey began as a hobby, tinkering with HTML and CSS, and quickly evolved into a career as I picked up languages like Python, JavaScript, and PHP. I enjoy turning ideas into practical tools and have built several small projects that support both my personal and professional life. You can explore them on my <a href="https://jack-breeton-portfolio.vercel.app/projects">projects page</a>. I'm also experienced with Git and love collaborating to bring ideas to life.
+          My journey began as a hobby, tinkering with HTML and CSS, and grew into a career through an apprenticeship at Ultra Events, where I built ticketing sites and internal tools. Today I’m a Web Developer at Marks Electrical, where I work on order tracking, user accounts, smart search, category pages and the homepage, alongside GA4 and Meta tracking, Klaviyo email automation and SEO. You can explore my earlier builds on my <a href="/projects">projects page</a>.
         </p>
         <p>
-          Currently, I work as a Web Development Assistant, gaining hands-on experience with real projects. I'm focused on taking on more complex builds, working within larger teams, and staying involved from design through to deployment and beyond.
+          I’m passionate about AI-assisted engineering. I build Claude agents and skills to automate development workflows, link Claude to tools like Jira through MCP, and use AI to generate unit tests, while keeping code review and GDPR considerations at the centre of how I work.
         </p>
         <p>
-          Outside of coding, you’ll find me at the gym, hiking, traveling with friends, or hunting down great food spots — all of which keep me inspired. I’m always open to new challenges and collaborations, so let’s build something great together!
+          Outside of coding, you’ll find me at the gym, hiking, travelling with friends, or hunting down great food spots. I’m always open to new challenges and collaborations, so let’s build something great together!
         </p>
-
 
           <p>
           <ResumeDownload/>

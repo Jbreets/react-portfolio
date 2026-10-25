@@ -17,7 +17,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     
-    console.log('Form submitted:', formData);
+    window.location.href = `mailto:jackbreeton@gmail.com?subject=${encodeURIComponent('Portfolio enquiry from ' + formData.name)}&body=${encodeURIComponent(formData.message + '\n\n' + formData.name + ' (' + formData.email + ')')}`;
     setIsSubmitted(true);
     setFormData({ name: '', email: '', message: '' });
     setTimeout(() => setIsSubmitted(false), 3000);
@@ -33,11 +33,11 @@ const Contact = () => {
           <h2>Contact Information</h2>
           <p>
             <i className="fas fa-envelope"></i> Email: 
-            <a href="mailto:example@email.com"> jackbreeton@gmail.com</a>
+            <a href="mailto:jackbreeton@gmail.com"> jackbreeton@gmail.com</a>
           </p>
           <p>
             <i className="fas fa-phone"></i> Phone: 
-            <a href="tel:+1234567890"> +447971857493</a>
+            <a href="tel:+447971857493"> +447971857493</a>
           </p>
           <p>
             <i className="fab fa-linkedin"></i> LinkedIn: 
@@ -46,7 +46,7 @@ const Contact = () => {
           </p>
           <p>
             <i className="fab fa-github"></i> GitHub: 
-            <a href="https://github.com/Jbreets/" target="_blank" rel="noopener noreferrer"> github.com/jackbreeton
+            <a href="https://github.com/Jbreets/" target="_blank" rel="noopener noreferrer"> github.com/Jbreets
             </a>
           </p>
           <p>

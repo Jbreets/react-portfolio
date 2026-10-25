@@ -160,3 +160,20 @@ h1, h2, h3, h4 {
     padding: 1rem 0rem;
   }
 }
+
+/* ========== 2026 refresh: theme tokens, nav, buttons ========== */
+.dark-mode  { --card:#112240; --line:#233554; --muted:#8892b0; --acc:#64ffda; --ink:#e6f1ff; }
+.light-mode { --card:#ffffff; --line:#e4dfcf; --muted:#5b6b7f; --acc:#1b8f94; --ink:#2e2e2e; }
+
+nav { backdrop-filter: blur(12px); background-color: color-mix(in srgb, var(--card) 85%, transparent) !important; border-bottom: 1px solid var(--line); padding: .7rem 1rem; }
+nav ul { margin: 0; align-items: center; flex-wrap: wrap; gap: 6px; }
+nav ul li a { padding: 8px 14px; border-radius: 999px; font-weight: 600; font-size: .95rem; }
+nav ul li a:hover { background: color-mix(in srgb, var(--acc) 14%, transparent); }
+.btn { display: inline-block; padding: 11px 20px; border-radius: 10px; border: 1px solid var(--acc); color: var(--acc); background: transparent; font-weight: 600; text-decoration: none; cursor: pointer; transition: transform .2s, background .2s, color .2s; }
+.btn:hover { transform: translateY(-2px); background: color-mix(in srgb, var(--acc) 14%, transparent); }
+.btn-primary { background: var(--acc); color: var(--card); }
+.btn-primary:hover { background: var(--acc); filter: brightness(1.08); }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 22px; text-align: left; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
+.about-text a, .page-content p a { color: var(--acc); }
