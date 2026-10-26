@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -9,6 +9,15 @@ import './App.css';
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
+
+  // Keep the page behind the app (and the mobile browser bars) the same colour as the theme
+  useEffect(() => {
+    const bg = darkMode ? '#060c1c' : '#f2f6fd';
+    document.documentElement.style.backgroundColor = bg;
+    document.body.style.backgroundColor = bg;
+    const meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.setAttribute('content', bg);
+  }, [darkMode]);
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
