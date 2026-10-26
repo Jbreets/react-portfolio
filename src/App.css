@@ -92,6 +92,7 @@ nav ul {
   display: flex;
   justify-content: center;
   gap: 20px;
+  padding-right: 1rem;
 }
 
 nav ul li {
