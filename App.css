@@ -1,0 +1,190 @@
+/* ========== CSS Variables ========== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@500&display=swap');
+:root {
+  /* Dark Mode (Deep Blue) */
+  --dark-bg: #060c1c;
+  --dark-nav: #0e1936;
+  --dark-text: #e9effd;
+  --dark-accent: #5b9bff;
+  --dark-secondary: #c3d1f2;
+  
+  /* Light Mode (Teal/Tan) */
+  --light-bg: #f2f6fd;
+  --light-nav: #ffffff;
+  --light-text: #0e1730;
+  --light-accent: #2f6bf0;
+  --light-secondary: #586783;
+
+  /* Fonts */
+  --font-primary: 'Inter', sans-serif;
+  --font-secondary: 'Space Grotesk', sans-serif;
+
+}
+
+/* ========== General Styles ========== */
+body {
+  margin: 0;
+  font-family: var(--font-primary);
+  font-display: swap;
+  /* font-family: 'Arial', sans-serif */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* ========== Dark Mode (Default) ========== */
+.dark-mode {
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
+}
+
+.dark-mode nav {
+  background-color: var(--dark-nav);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.dark-mode nav ul li a {
+  color: var(--dark-secondary);
+}
+
+.dark-mode nav ul li a:hover {
+  color: var(--dark-accent);
+}
+
+/* ========== Light Mode ========== */
+.light-mode {
+  background-color: var(--light-bg);
+  color: var(--light-text);
+}
+
+.light-mode nav {
+  background-color: var(--light-nav);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.light-mode nav ul li a {
+  color: var(--light-secondary);
+}
+
+.light-mode nav ul li a:hover {
+  color: var(--light-accent);
+}
+
+/* ========== Navigation ========== */
+nav {
+  width: 100%;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-right: 1rem;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+/* ========== Theme Toggle Button ========== */
+.theme-toggle {
+  background-color: transparent;
+  border: 2px solid var(--dark-accent);
+  color: var(--dark-accent);
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.theme-toggle:hover {
+  background-color: var(--dark-accent);
+  color: var(--dark-bg);
+}
+
+.light-mode .theme-toggle {
+  border-color: var(--light-accent);
+  color: var(--light-accent);
+}
+
+.light-mode .theme-toggle:hover {
+  background-color: var(--light-accent);
+  color: var(--light-nav);
+}
+
+/* ========== Page Content ========== */
+.page-content {
+  margin-top: 80px;
+  max-width: 1200px; /* Increased from 800px */
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+/* ========== Typography ========== */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+h1, h2, h3, h4 {
+  font-family: var(--font-secondary);
+  letter-spacing: -0.5px;
+  font-weight: 500;
+}
+
+@media (max-width: 400px) {
+  nav {
+    padding: 1rem 0rem;
+  }
+}
+
+/* ========== 2026 refresh: theme tokens, nav, buttons ========== */
+.dark-mode  { --card:#0e1936; --line:#1e2f5c; --muted:#93a3c6; --acc:#5b9bff; --acc2:#38bdf8; --ink:#e9effd; --accent-primary:#5b9bff; --bg-secondary:#0e1936; --text-primary:#e9effd; --glow:rgba(70,120,255,.22); }
+.light-mode { --card:#ffffff; --line:#d9e2f2; --muted:#586783; --acc:#2f6bf0; --acc2:#0ea5e9; --ink:#0e1730; --accent-primary:#2f6bf0; --bg-secondary:#ffffff; --text-primary:#0e1730; --glow:rgba(47,107,240,.16); }
+
+nav { backdrop-filter: blur(12px); background-color: color-mix(in srgb, var(--card) 85%, transparent) !important; border-bottom: 1px solid var(--line); padding: .7rem 1rem; }
+nav ul { margin: 0; align-items: center; flex-wrap: wrap; gap: 6px; }
+nav ul li a { padding: 8px 14px; border-radius: 999px; font-weight: 600; font-size: .95rem; }
+nav ul li a:hover { background: color-mix(in srgb, var(--acc) 14%, transparent); }
+.btn { display: inline-block; padding: 11px 20px; border-radius: 10px; border: 1px solid var(--acc); color: var(--acc); background: transparent; font-weight: 600; text-decoration: none; cursor: pointer; transition: transform .2s, background .2s, color .2s; }
+.btn:hover { transform: translateY(-2px); background: color-mix(in srgb, var(--acc) 14%, transparent); }
+.btn-primary { background: var(--acc); color: var(--card); }
+.btn-primary:hover { background: var(--acc); filter: brightness(1.08); }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 22px; text-align: left; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
+.about-text a, .page-content p a { color: var(--acc); }
+
+/* ========== Blue refresh: backgrounds ========== */
+.App.dark-mode, .App.light-mode { background-image: radial-gradient(900px 500px at 15% -5%, var(--glow), transparent 60%), radial-gradient(700px 420px at 100% 8%, color-mix(in srgb, var(--acc2) 14%, transparent), transparent 60%); background-attachment: fixed; }
+.grad { background: linear-gradient(100deg, var(--acc), var(--acc2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.btn-primary { background: linear-gradient(100deg, var(--acc), var(--acc2)); border-color: transparent; color: #fff; }
+
+/* ========== Mobile edges: match background, respect notch / home bar ========== */
+html, body { background-color: #060c1c; }
+.App { min-height: 100vh; min-height: 100dvh; padding-bottom: calc(20px + env(safe-area-inset-bottom, 0px)); }
+nav { padding-top: calc(.7rem + env(safe-area-inset-top, 0px)) !important; }

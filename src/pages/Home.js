@@ -6,7 +6,7 @@ import './Home.css';
 
 const stats = [
   { value: '5+', label: 'years in professional development' },
-  { value: '110+', label: 'LeetCode problems solved' },
+  { value: 'Full stack', label: 'PHP, React & Python, front to back end' },
   { value: 'Claude', label: 'agents, skills & MCP' },
   { value: 'GDPR', label: 'aware, review-led engineering' },
 ];
