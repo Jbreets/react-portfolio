@@ -188,7 +188,7 @@ body.modal-open {
     color: white;
   }
   .dark-mode .filter-bar button {
-    background: #64ffda;
+    background: #5b9bff;
   }
   .dark-mode .filter-bar button.active,
   .filter-bar button:hover {

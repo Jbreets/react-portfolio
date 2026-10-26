@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
-import ProjectsNew from './pages/ProjectsNew';
+import ProjectsShowcase from './pages/ProjectsShowcase';
 import Contact from './pages/Contact';
 import NotFound from './pages/404';
 import './App.css';
@@ -43,7 +43,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           {/* <Route path="/projects" element={<Projects />} /> */}
-          <Route path="/projects" element={<ProjectsNew />} />
+          <Route path="/projects" element={<ProjectsShowcase />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -2,18 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@500&display=swap');
 :root {
   /* Dark Mode (Deep Blue) */
-  --dark-bg: #0a192f;
-  --dark-nav: #172a45;
-  --dark-text: #e6f1ff;
-  --dark-accent: #64ffda;
-  --dark-secondary: #ccd6f6;
+  --dark-bg: #060c1c;
+  --dark-nav: #0e1936;
+  --dark-text: #e9effd;
+  --dark-accent: #5b9bff;
+  --dark-secondary: #c3d1f2;
   
   /* Light Mode (Teal/Tan) */
-  --light-bg: #f8f4e9;
+  --light-bg: #f2f6fd;
   --light-nav: #ffffff;
-  --light-text: #2e2e2e;
-  --light-accent: #20a4a8;
-  --light-secondary: #3d5a80;
+  --light-text: #0e1730;
+  --light-accent: #2f6bf0;
+  --light-secondary: #586783;
 
   /* Fonts */
   --font-primary: 'Inter', sans-serif;
@@ -162,8 +162,8 @@ h1, h2, h3, h4 {
 }
 
 /* ========== 2026 refresh: theme tokens, nav, buttons ========== */
-.dark-mode  { --card:#112240; --line:#233554; --muted:#8892b0; --acc:#64ffda; --ink:#e6f1ff; }
-.light-mode { --card:#ffffff; --line:#e4dfcf; --muted:#5b6b7f; --acc:#1b8f94; --ink:#2e2e2e; }
+.dark-mode  { --card:#0e1936; --line:#1e2f5c; --muted:#93a3c6; --acc:#5b9bff; --acc2:#38bdf8; --ink:#e9effd; --accent-primary:#5b9bff; --bg-secondary:#0e1936; --text-primary:#e9effd; --glow:rgba(70,120,255,.22); }
+.light-mode { --card:#ffffff; --line:#d9e2f2; --muted:#586783; --acc:#2f6bf0; --acc2:#0ea5e9; --ink:#0e1730; --accent-primary:#2f6bf0; --bg-secondary:#ffffff; --text-primary:#0e1730; --glow:rgba(47,107,240,.16); }
 
 nav { backdrop-filter: blur(12px); background-color: color-mix(in srgb, var(--card) 85%, transparent) !important; border-bottom: 1px solid var(--line); padding: .7rem 1rem; }
 nav ul { margin: 0; align-items: center; flex-wrap: wrap; gap: 6px; }
@@ -177,3 +177,8 @@ nav ul li a:hover { background: color-mix(in srgb, var(--acc) 14%, transparent);
 html { scroll-behavior: smooth; }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
 .about-text a, .page-content p a { color: var(--acc); }
+
+/* ========== Blue refresh: backgrounds ========== */
+.App.dark-mode, .App.light-mode { background-image: radial-gradient(900px 500px at 15% -5%, var(--glow), transparent 60%), radial-gradient(700px 420px at 100% 8%, color-mix(in srgb, var(--acc2) 14%, transparent), transparent 60%); background-attachment: fixed; }
+.grad { background: linear-gradient(100deg, var(--acc), var(--acc2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.btn-primary { background: linear-gradient(100deg, var(--acc), var(--acc2)); border-color: transparent; color: #fff; }

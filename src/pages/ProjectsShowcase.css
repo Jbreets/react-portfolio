@@ -1,0 +1,12 @@
+.page-content.showcase { margin-top: 80px; width: 100%; max-width: 1040px; text-align: left; }
+.page-content.showcase h1, .page-content.showcase h3, .page-content.showcase p { text-align: left; }
+.showcase h1 { font-size: clamp(2rem, 4.5vw, 3rem); line-height: 1.08; letter-spacing: -.03em; margin: .3em 0 .2em; }
+.showcase .lead { color: var(--muted); font-size: 1.1rem; }
+.filters { display: flex; gap: 8px; flex-wrap: wrap; margin: 18px 0 22px; }
+.f { border: 1px solid var(--line); background: var(--card); color: var(--muted); padding: 7px 16px; border-radius: 999px; font-weight: 700; cursor: pointer; font-size: .88rem; font-family: inherit; }
+.f:hover { border-color: var(--acc); }
+.f.on { background: var(--acc); border-color: var(--acc); color: #fff; }
+.thumb { width: 100%; height: 150px; object-fit: cover; object-position: top; border-radius: 12px; margin-bottom: 14px; border: 1px solid var(--line); }
+.links { margin-top: 12px; display: flex; gap: 14px; flex-wrap: wrap; font-size: .88rem; }
+.links a { color: var(--acc); font-weight: 700; text-decoration: none; }
+.links a:hover { text-decoration: underline; }

@@ -98,18 +98,18 @@
   }
   
   .dark-mode .contact-info i {
-    color: #64ffda;
+    color: #5b9bff;
   }
   .dark-mode .contact-info h2 {
-    color: #64ffda;
+    color: #5b9bff;
   }
 
   .dark-mode .contact-info a:hover {
-    color: #20a4a8;
+    color: #2f6bf0;
   }
   
   .dark-mode .submit-btn {
-    background: #20a4a8;
+    background: #2f6bf0;
   }
   
   .dark-mode .submit-btn:hover {
